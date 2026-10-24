@@ -10,7 +10,7 @@ public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 
 collections:
-  - name: "inventory"
+  - name: "cars"
     label: "Car Inventory"
     files:
       - name: "cars"
@@ -23,15 +23,41 @@ collections:
             widget: "list"
             summary: "{{fields.name}} — {{fields.price}}"
             fields:
-              - label: "Image"
-                name: "image"
-                widget: "image"
               - label: "Name"
                 name: "name"
                 widget: "string"
+                required: true
               - label: "Price"
                 name: "price"
                 widget: "string"
+                required: true
+              - label: "Year"
+                name: "year"
+                widget: "number"
+                value_type: "int"
+                required: true
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                required: true
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: true
+              - label: "Brand"
+                name: "brand"
+                widget: "string"
+                required: false
               - label: "Specs"
                 name: "specs"
                 widget: "string"
+                required: false
+              - label: "Badge"
+                name: "badge"
+                widget: "string"
+                required: false
+              - label: "ID"
+                name: "id"
+                widget: "number"
+                value_type: "int"
+                required: false

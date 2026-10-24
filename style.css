@@ -98,6 +98,7 @@ h1 em,h2 em { color: var(--red); font-style: normal; }
 .car-title-line { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
 .car-title-line h3 { margin: 0; font: 23px var(--display); text-transform: uppercase; }
 .car-price { color: var(--red); font-size: 14px; font-weight: 700; white-space: nowrap; }
+.car-description { margin: 12px 0 0; color: #ccc; font-size: 12px; line-height: 1.6; }
 .car-specs { min-height: 17px; margin: 12px 0 18px; color: #aaa; font-size: 10px; letter-spacing: .07em; }
 .car-whatsapp { display: flex; justify-content: space-between; border-top: 1px solid #292929; padding-top: 14px; color: #eee; font-size: 9px; font-weight: 700; letter-spacing: .13em; }
 .car-whatsapp span { color: var(--red); font-size: 16px; }

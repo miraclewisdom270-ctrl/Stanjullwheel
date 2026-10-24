@@ -123,13 +123,14 @@
       const name = escapeHtml(car.name || "Vehicle");
       const image = escapeHtml(car.image || FALLBACK_CAR_IMAGE);
       const specs = Array.isArray(car.specs) ? car.specs.join(" · ") : (car.specs || "Vehicle details available on request");
+      const description = car.description ? `<p class="car-description">${escapeHtml(car.description)}</p>` : "";
       const year = Number(car.year) || String(specs || "").match(/\b(?:19|20)\d{2}\b/)?.[0] || "year not specified";
       const enquiry = encodeURIComponent(`Hi Stanley, I want to buy ${car.name || "car"} ${year} at ${car.price || "Price on request"} from STANJULLWHEELS website. Is it still available in Lagos? Can I come inspect?`);
       const whatsapp = `https://wa.me/2349068629026?text=${enquiry}`;
       return `<article class="car-card">
         <div class="car-photo"><img src="${image}" alt="${name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800'"><span class="car-number">0${index + 1} / 0${cars.length}</span></div>
         <div class="car-info"><div class="car-title-line"><h3>${name}</h3><span class="car-price">${formatPrice(car.price)}</span></div>
-        <p class="car-specs">${escapeHtml(specs)}</p>
+        ${description}<p class="car-specs">${escapeHtml(specs)}</p>
         <a class="car-whatsapp" href="${whatsapp}" target="_blank" rel="noopener noreferrer">ENQUIRE ON WHATSAPP <span>↗</span></a></div>
       </article>`;
     }).join("");
