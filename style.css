@@ -160,3 +160,4 @@ h1 em,h2 em { color: var(--red); font-style: normal; }
   html { scroll-behavior: auto; }
   *,*::before,*::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+#nl-badge-frame { display: none !important; }
