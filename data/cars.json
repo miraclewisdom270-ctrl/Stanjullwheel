@@ -1,59 +1,59 @@
 {
   "cars": [
     {
-      "id": 1,
-      "name": "Toyota Camry 2019 XSE",
-      "brand": "Toyota",
-      "price": "₦18.5M",
-      "image": "https://images.unsplash.com/photo-1790319884754-793a880f1950?w=800&q=80",
-      "year": 2019,
-      "description": "A Toyota Camry XSE with a 2.5L engine and thumbstart.",
       "badge": "CUSTOMS PAID",
-      "specs": "2.5L, Thumbstart"
+      "brand": "Toyota",
+      "price": "₦20.5M",
+      "name": "Toyota Camry 2019 XSE",
+      "specs": "2.5L, Thumbstart",
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1790319884754-793a880f1950?w=800&q=80",
+      "description": "A Toyota Camry XSE with a 2.5L engine and thumbstart.",
+      "year": 2019
     },
     {
-      "id": 2,
-      "name": "Mercedes-Benz C-Class 2021",
+      "badge": "VERIFIED",
       "brand": "Mercedes-Benz",
       "price": "₦22.8M",
+      "name": "Mercedes-Benz C-Class 2021",
+      "specs": "2.0L, Automatic",
+      "id": 2,
       "image": "https://images.unsplash.com/photo-1591993099887-45303f09524b?w=800&q=80",
-      "year": 2021,
       "description": "A Mercedes-Benz C-Class with a 2.0L engine and automatic transmission.",
-      "badge": "VERIFIED",
-      "specs": "2.0L, Automatic"
+      "year": 2021
     },
     {
-      "id": 3,
-      "name": "BMW 5 Series 2020",
+      "badge": "PREMIUM",
       "brand": "BMW",
       "price": "₦26.6M",
+      "name": "BMW 5 Series 2020",
+      "specs": "3.0L, Turbo",
+      "id": 3,
       "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80",
-      "year": 2020,
       "description": "A BMW 5 Series powered by a 3.0L turbo engine.",
-      "badge": "PREMIUM",
-      "specs": "3.0L, Turbo"
+      "year": 2020
     },
     {
-      "id": 4,
-      "name": "Audi A4 2020",
+      "badge": "READY FOR DELIVERY",
       "brand": "Audi",
       "price": "₦20.4M",
+      "name": "Audi A4 2020",
+      "specs": "2.0L, Quattro",
+      "id": 4,
       "image": "https://images.unsplash.com/photo-1625837878417-76cf80045d79?w=800&q=80",
-      "year": 2020,
       "description": "An Audi A4 with a 2.0L engine and Quattro.",
-      "badge": "READY FOR DELIVERY",
-      "specs": "2.0L, Quattro"
+      "year": 2020
     },
     {
-      "id": 5,
-      "name": "Lexus RX 2022",
+      "badge": "NEW ARRIVAL",
       "brand": "Lexus",
       "price": "₦31.2M",
+      "name": "Lexus RX 2022",
+      "specs": "2.4L, Hybrid",
+      "id": 5,
       "image": "https://images.unsplash.com/photo-1742941129482-843e7492aa0b?w=800&q=80",
-      "year": 2022,
       "description": "A Lexus RX with a 2.4L hybrid powertrain.",
-      "badge": "NEW ARRIVAL",
-      "specs": "2.4L, Hybrid"
+      "year": 2022
     }
   ]
 }
