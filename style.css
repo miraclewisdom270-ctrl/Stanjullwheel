@@ -22,6 +22,8 @@ button { font: inherit; }
   z-index: 9999;
   display: grid;
   place-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
   overflow: hidden;
   background: #000;
 }
@@ -131,6 +133,15 @@ h1 em,h2 em { color: var(--red); font-style: normal; }
   .manifesto-copy { padding: 65px 8%; }
 }
 @media (max-width: 600px) {
+  #intro-overlay { padding: 24px 0; }
+  .intro-content { padding: 20px 14px; }
+  .intro-skip { top: max(18px, env(safe-area-inset-top)); right: 18px; }
+  .enter-button { max-width: 100%; padding: 15px 12px; font-size: 10px; }
+  .intro-kicker,.intro-caption { font-size: 8px; letter-spacing: .2em; }
+  .intro-brand { max-width: 100%; font-size: clamp(28px, 9vw, 54px); letter-spacing: clamp(0px, .6vw, 2px); }
+  .intro-speed { margin: 14px 0; font-size: 15px; }
+  .intro-car { top: 54%; width: 94vw; }
+  .intro-caption { margin-top: 125px; }
   .site-header { padding: 22px 6%; }
   .wordmark { font-size: 24px; }
   .main-nav { display: none; }
@@ -155,6 +166,12 @@ h1 em,h2 em { color: var(--red); font-style: normal; }
   .site-footer > div { grid-column: 2; grid-row: 1; gap: 13px; }
   .site-footer > small { grid-row: 3; }
   .sound-toggle { right: 12px; bottom: 12px; }
+}
+@media (max-width: 600px) and (max-height: 560px) {
+  .intro-content { padding: 10px 14px; }
+  .intro-kicker { margin-top: 18px; }
+  .intro-speed { margin: 8px 0; }
+  .intro-caption { margin-top: 75px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

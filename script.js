@@ -12,6 +12,7 @@
   let muted = false;
   let introStarted = false;
   let introTimeline = null;
+  let introFailsafe = null;
 
   function setSoundState(isMuted) {
     muted = isMuted;
@@ -35,6 +36,10 @@
   }
 
   function finishIntro() {
+    if (introFailsafe) {
+      window.clearTimeout(introFailsafe);
+      introFailsafe = null;
+    }
     document.body.classList.remove("intro-active");
     overlay.classList.add("is-hidden");
     engineSound.pause();
@@ -46,6 +51,7 @@
     introStarted = true;
     enterButton.disabled = true;
     playAudio(engineSound, muted ? 0 : 0.6);
+    introFailsafe = window.setTimeout(finishIntro, 10000);
     if (!window.gsap || prefersReducedMotion) {
       finishIntro();
       return;
@@ -73,6 +79,7 @@
     finishIntro();
   }
 
+  overlay.classList.remove("is-hidden");
   document.body.classList.add("intro-active");
   enterButton.addEventListener("click", startIntro);
   skipButton.addEventListener("click", skipIntro);
