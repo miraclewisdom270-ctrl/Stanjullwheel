@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="STANJULLWHEELS — a considered collection of exceptional performance and luxury cars.">
+  <title>STANJULLWHEELS — Drive the Dream</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="engineSound" preload="auto">
+    <source src="sounds/fast-car-drive-by.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="brakeSound" preload="auto">
+    <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_c8c8a73467.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="intro-overlay" aria-label="STANJULLWHEELS introduction">
+    <button class="intro-skip" id="skipIntro" type="button">SKIP INTRO <span aria-hidden="true">↗</span></button>
+    <div class="intro-content">
+      <button class="enter-button" id="enterGarage" type="button">ENTER THE GARAGE <span>[SOUND ON]</span> <span aria-hidden="true">🔊</span></button>
+      <div class="intro-line" aria-hidden="true"></div>
+      <p class="intro-kicker" id="introKicker">THE ART OF THE ARRIVAL</p>
+      <h1 class="intro-brand" id="introBrand">STANJULLWHEELS</h1>
+      <p class="intro-speed" id="introSpeed"><span>BUILT FOR</span> <strong>SPEED.</strong></p>
+      <div class="intro-car" id="introCar" aria-hidden="true">
+        <svg viewBox="0 0 620 180" role="img">
+          <path d="M55 122 80 92q13-13 42-18l73-13 55-42q14-11 39-11h117q22 0 42 16l63 52 55 13q24 6 32 25l5 15-20 15H48l-1-12q0-8 8-10Z"/>
+          <path class="car-window" d="m211 66 48-37q8-6 23-6h52v47Zm137-43h56q14 0 27 11l45 37H348Z"/>
+          <circle cx="157" cy="141" r="33"/><circle cx="157" cy="141" r="14" class="wheel-center"/>
+          <circle cx="478" cy="141" r="33"/><circle cx="478" cy="141" r="14" class="wheel-center"/>
+          <path class="headlight" d="m537 102 47 12-4 10-43-5Z"/>
+        </svg>
+      </div>
+      <p class="intro-caption" id="introCaption">A DIFFERENT KIND OF DRIVE</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="STANJULLWHEELS home">STANJULLWHEELS</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#shop">THE COLLECTION</a>
+      <a href="#services">OUR SERVICES</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <a class="header-call" href="tel:+2349068629026">CALL +234 906 862 9026 <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-image" role="img" aria-label="Luxury sports car on a dark road"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> THE STANJULLWHEELS COLLECTION</p>
+        <h1 id="heroTitle">DRIVE<br>THE <em>DREAM.</em></h1>
+        <p class="hero-description">Exceptional cars. Unforgettable journeys.<br>Your next chapter starts here.</p>
+        <div class="hero-actions">
+          <a class="button button-red" href="#shop">VIEW THE CARS <span>↗</span></a>
+          <a class="button button-outline" href="https://wa.me/2349068629026?text=Hi%20Stanley%2C%20I%27m%20interested%20in%20your%20collection%20from%20STANJULLWHEELS%20website." target="_blank" rel="noopener noreferrer">WHATSAPP US <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-meta"><span>01 / 04</span><span>CURATED FOR THE FEELING</span></div>
+      <a class="scroll-cue" href="#shop">SCROLL TO EXPLORE <span></span></a>
+    </section>
+
+    <section class="inventory section-pad" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> HANDPICKED. ROAD-READY.</p><h2>THE <em>COLLECTION</em></h2></div>
+        <p class="section-note">A rare mix of performance, presence<br>and pure driving pleasure.</p>
+      </div>
+      <div class="inventory-grid" id="inventoryGrid" aria-live="polite">
+        <p class="inventory-status">Loading the collection…</p>
+      </div>
+    </section>
+
+    <section class="manifesto" id="services">
+      <div class="manifesto-image" role="img" aria-label="Performance car detail"></div>
+      <div class="manifesto-copy">
+        <p class="eyebrow"><span></span> MORE THAN THE KEYS</p>
+        <h2>THE DRIVE<br>IS <em>ONLY</em><br>THE BEGINNING.</h2>
+        <p>From the first conversation to the first mile, our team makes every part of your next-car experience feel exceptional.</p>
+        <div class="service-list">
+          <div><span>01</span><p><strong>PERSONAL SOURCING</strong><small>The right car, found for you.</small></p></div>
+          <div><span>02</span><p><strong>CONSIDERED FINANCE</strong><small>Clear options. No pressure.</small></p></div>
+          <div><span>03</span><p><strong>DELIVERY, YOUR WAY</strong><small>From our garage to your door.</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="urgency" id="contact">
+      <p class="eyebrow"><span></span> YOUR NEXT DRIVE IS WAITING</p>
+      <h2>DON'T JUST<br><em>IMAGINE IT.</em></h2>
+      <p>Talk to our team and make your next move.<br><a href="tel:+2349068629026">+234 906 862 9026</a></p>
+      <a class="button button-red" href="https://wa.me/2349068629026?text=Hi%20Stanley%2C%20let%27s%20talk%20about%20my%20next%20car%20from%20STANJULLWHEELS%20website." target="_blank" rel="noopener noreferrer">START A CONVERSATION <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#">STANJULLWHEELS</a>
+    <p>EXCEPTIONAL CARS. EXTRAORDINARY FEELING.</p>
+    <div><a href="tel:+2349068629026">+234 906 862 9026</a><a href="https://wa.me/2349068629026" target="_blank" rel="noopener noreferrer">WHATSAPP</a></div>
+    <small>© STANJULLWHEELS 2025</small>
+  </footer>
+
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Mute sound" aria-pressed="false">
+    <span class="sound-icon" aria-hidden="true">♫</span><span class="sound-label">SOUND ON</span>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
